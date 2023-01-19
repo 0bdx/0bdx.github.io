@@ -4,11 +4,109 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>0bdx / Coming Soon</title>
+  <title>Øbdx / Coming Soon</title>
+  
   <style>
-    body{ background:#fff; text-align:center }
-    svg{ max-width:75vw; max-height:75vh }
-    h1{ margin:-1vh 0 0 0 }
+    /* latin-ext */
+    @font-face {
+      font-family: 'PT Mono';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(./asset/font/pt-mono-latin-ext.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'PT Mono';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(./asset/font/pt-mono-latin.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* latin-ext */
+    @font-face {
+      font-family: 'PT Sans Caption';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(./asset/font/pt-sans-caption-latin-ext.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'PT Sans Caption';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(./asset/font/pt-sans-caption-latin.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* latin-ext */
+    @font-face {
+      font-family: 'PT Sans Caption';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(./asset/font/pt-sans-caption-bold-latin-ext.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'PT Sans Caption';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(./asset/font/pt-sans-caption-bold-latin.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* latin-ext */
+    @font-face {
+      font-family: 'PT Sans Narrow';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(./asset/font/pt-sans-narrow-latin-ext.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'PT Sans Narrow';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(./asset/font/pt-sans-narrow-latin.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* latin-ext */
+    @font-face {
+      font-family: 'PT Sans Narrow';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(./asset/font/pt-sans-narrow-bold-latin-ext.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'PT Sans Narrow';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(./asset/font/pt-sans-narrow-bold-latin.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+  <style>
+    body { text-align:center; font-family: 'PT Sans Caption', sans-serif;
+      background:#fff; color:#0b440b }
+    .narrow { font-family: 'PT Sans Narrow', sans-serif }
+    svg { max-width:75vw; max-height:75vh }
+    h1 { margin:-1vh 0 0 0 }
+    a { color:#aa0baa }
+    a:hover { color:#dd44dd }
+    code, pre, tt { font-family: 'PT Mono', monospace }
   </style>
 </head>
 <body>
@@ -38,7 +136,7 @@
       <path fill="#fff" d="M0,0v560h560V0H0z M280,543.01C134.75,543.01,16.99,425.25,16.99,280S134.75,16.99,280,16.99
         S543.01,134.75,543.01,280S425.25,543.01,280,543.01z"/></g>
     </svg>
-    <h1>0bdx / Coming&nbsp;Soon</h1>
+    <h1><span class="narrow">Ø</span>bdx / Coming&nbsp;Soon</h1>
     Check out our <a href="https://github.com/0bdx?tab=repositories">GitHub repos</a>
 </body>
 </html>
